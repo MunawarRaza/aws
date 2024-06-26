@@ -2,24 +2,33 @@
 1. [What is ECR](#What-is-ECR)
 2. [What are the components of ECR](#What-are-the-components-of-Amazon-ECR)
 3. [How to Authenticate the ECR](#how-to-authenticate-with-ecr)
-# What is ECR
+4. [How to push image to ECR repository](#how-to-push-image-to-ecr-repository)
+## What is ECR
 Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image registry service that is secure, scalable, and reliable
 
 ## What are the Components of Amazon ECR
 Amazon ECR contains the following components:
 
 ### Registry
+
 AWS ECR is the private registory which is provided to each AWS account. In this private registry you can create one or more public or private repositories on your need.
+
 ### Authorization token
+
 Before push or pull the image, you must have to authenticate your self to ECR as an IAM users. In short, you must have to login before push or pull the images.
+
 ### Repository
+
 An AWS ECR registory contains the docker images.
+
 ### Repository policy
+
 You can control access to your repositories and the contents within them with repository policies.
+
 ### Images
 These are the docker images, within the Registory.
 
-# How to Authenticate with ECR
+## How to Authenticate with ECR
 Before push and pull the images, you must have to login into ECR registory. There are multiple methods to authenticate your self.
 
 1. [Using the Amazon ECR credential helper](#Using-the-Amazon-ECR-credential-helper)
@@ -34,6 +43,8 @@ apt install amazon-ecr-credential-helper
 ```
 ### Using an authorization token
 Authorization token is used to access the any Amazon ECR registory and is valid for 12 hours. You can get the authorization token using ```aws ecr get-login-password``` command
+
+## How to push image to ECR repository
 
 1. Install and Configure the AWS CLI
 2. Get the token and pass it to docker login command
