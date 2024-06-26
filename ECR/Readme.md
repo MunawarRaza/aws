@@ -46,28 +46,34 @@ Authorization token is used to access the any Amazon ECR registory and is valid 
 
 ## How to push image to ECR repository
 
-1. Install and Configure the AWS CLI
-2. Get the token and pass it to docker login command
+1. Install AWS cli
+2. Configure aws cli
+3. Login to ECR
+4. Tag the image
+5. Push the image
 
 #### Install awscli
 ```
-   apt install awscli
+apt install awscli
 ```
 #### Configure AWS CLI using below command
 ```
-   aws configure
+aws configure
 ```
 #### Login to ECR Registory
 ```
-   aws ecr get-login-password --region region | docker login --username AWS --password-stdin aws_account_id.dkr.ecr.region.amazonaws.com
+aws ecr get-login-password --region region | docker login --username AWS --password-stdin aws_account_id.dkr.ecr.region.amazonaws.com
 e.g
-   aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 590183784162.dkr.ecr.us-east-1.amazonaws.com
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 590183784162.dkr.ecr.us-east-1.amazonaws.com
 ```
+
 ##### Tag the image
+
 ```
-   docker tag simple-nodejs-app:latest 590183784162.dkr.ecr.us-east-1.amazonaws.com/simple-nodejs-app:latest
+docker tag simple-nodejs-app:latest 590183784162.dkr.ecr.us-east-1.amazonaws.com/simple-nodejs-app:latest
 ```
 #### Push the image
+
 ```
-   docker push 590183784162.dkr.ecr.us-east-1.amazonaws.com/simple-nodejs-app:latest
+docker push 590183784162.dkr.ecr.us-east-1.amazonaws.com/simple-nodejs-app:latest
 ```
