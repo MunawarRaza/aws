@@ -2,7 +2,8 @@
 1. [What is ECR](#What-is-ECR)
 2. [What are the components of ECR](#What-are-the-components-of-Amazon-ECR)
 3. [How to Authenticate the ECR](#how-to-authenticate-with-ecr)
-4. [How to push image to ECR repository](#how-to-push-image-to-ecr-repository)
+4. [How to create repository](#how-to-create-repository)
+5. [How to push image to ECR repository](#how-to-push-image-to-ecr-repository)
 ## What is ECR
 Amazon Elastic Container Registry (Amazon ECR) is an AWS managed container image registry service that is secure, scalable, and reliable
 
@@ -43,6 +44,8 @@ apt install amazon-ecr-credential-helper
 ```
 ### Using an authorization token
 Authorization token is used to access the any Amazon ECR registory and is valid for 12 hours. You can get the authorization token using ```aws ecr get-login-password``` command
+
+## How to create repository
 
 ## How to push image to ECR repository
 
