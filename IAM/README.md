@@ -123,7 +123,7 @@ Identity-based policies control what actions the identity can perform, on which 
 2. Inline policies
 
 ### Resource-based policies
-esource-based policies are permissions policies that you attach to a resource such as an Amazon S3 bucket ( my_bucket )
+Resource-based policies are permissions policies that you attach to a resource such as an Amazon S3 bucket ( my_bucket )
 
 Note:
 
@@ -155,4 +155,4 @@ An IAM role is an IAM identity that you can create in your account that has spec
 
 1. A role does not have standard long-term credentials just like iam user
 2. A role can be assumbled to anyone who needs it
-3. With a rele we can assign delegate access to users, applications and services.
+3. With a role we can assign delegate access to users, applications and services.
