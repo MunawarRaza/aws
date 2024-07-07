@@ -110,13 +110,6 @@ Summery:
 
 "munawar" can perform GetObject and PutObject action on mybucket resource
 
-## How to attach the policies
-Following are different ways to attach the policies
-
-3. Policies and Accounts
-2. Policies and Users
-1. Policies and Groups
-
 ## What are IAM Policies Type
 
 1. Identity-based policies
@@ -136,11 +129,30 @@ Note:
 
 If a user attached identity-based policy and in that policy user is not allowd to perform the action on resource but there is a policy on resource in which it is defined that any user can access this resource then user can access that resource.
 
+## How to attach the policies
+Following are different ways to attach the policies
+
+3. Policies and Accounts
+2. Policies and Users
+1. Policies and Groups
+
+
+
 ## Terms in AWS
 
 ### AWS Service
+
+High level services like ec2, s3, lambda, 
 
 ### AWS Resource
 
 Resource is basically comes under the aws service. For instance, s3 is a aws service. my_bucket is a resource in s3. A resource is an entity that you can work with
 
+
+## What are IAM Roles
+
+An IAM role is an IAM identity that you can create in your account that has specific permissions.
+
+1. A role does not have standard long-term credentials just like iam user
+2. A role can be assumbled to anyone who needs it
+3. With a rele we can assign delegate access to users, applications and services.
