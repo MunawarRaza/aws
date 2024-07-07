@@ -9,13 +9,23 @@
 
 AWS Identity and Access Management (IAM) is a web service that helps you securely control and access to AWS resources.
 
+## What are the feature of IAM
+
+Shared access to your AWS account
+    without providing your credentials, allow other persons to manage the resources
+Granular permissions
+    You can grant different permissions to different people for different resources.
+Secure access to AWS resources for applications that run on Amazon EC2
+    Grant the access to the application to use other aws resources on your behalf
+Multi-factor authentication (MFA)
+    Use MFA to secure your account
+
 ## What is IAM User
 
 IAM users are the users for humen to access the AWS resources with assigned permissions/policies
 
 ## What are IAM Policies
-
-Policies are the permissions and written in JSON document
+When a IAM user try to loggin, it will not be able to access the resources. We have to give permissions to that user. To give permissions we use policies, which is json document in which we define which user will be given to which permissions of which resources.
 
 ### Elements of JSON Policy Document
 
@@ -100,14 +110,37 @@ Summery:
 
 "munawar" can perform GetObject and PutObject action on mybucket resource
 
+## How to attach the policies
+Following are different ways to attach the policies
+
+3. Policies and Accounts
+2. Policies and Users
+1. Policies and Groups
+
 ## What are IAM Policies Type
 
-1- Identity-based policies
-
-2- Resource-based policies
+1. Identity-based policies
+2. Resource-based policies
 
 ### Identity-based policies
-Identity-based policies are JSON permissions policy documents that control what actions an identity (users, groups of users, and roles) can perform, on which resources, and under what conditions
+Identity-based policies are permissions policies that you attach to an IAM identity, such as an IAM user, group, or role.
+Identity-based policies control what actions the identity can perform, on which resources, and under what conditions.
 
-1- Managed policies 
-2- Inline policies
+1. Managed policies 
+2. Inline policies
+
+### Resource-based policies
+esource-based policies are permissions policies that you attach to a resource such as an Amazon S3 bucket ( my_bucket )
+
+Note:
+
+If a user attached identity-based policy and in that policy user is not allowd to perform the action on resource but there is a policy on resource in which it is defined that any user can access this resource then user can access that resource.
+
+## Terms in AWS
+
+### AWS Service
+
+### AWS Resource
+
+Resource is basically comes under the aws service. For instance, s3 is a aws service. my_bucket is a resource in s3. A resource is an entity that you can work with
+
