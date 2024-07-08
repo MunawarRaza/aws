@@ -1,6 +1,11 @@
 # Table of Contents
 1. [What is EC2](#What-is-EC2)
-
+2. [What are the feature of EC2](#What-are-the-feature-of-EC2)
+3. [What are the related services of EC2](#What-are-the-related-services-of-EC2)
+4. [What are Instances Types](#What-are-Instances-Types)
+5. [What is the Naming Convention of Instance Type](#What-is-the-Naming-Convention-of-Instance-Type)
+6. [When to chose which instance type](#When-to-chose-which-instance-type)
+7. [How to Create EC2](#How-to-Create-EC2)
 
 ## What is EC2
 
@@ -106,7 +111,7 @@ c7gn.xlarge
 - g --> AWS Graviton processors
 - i --> intel processor
 
-## Difference between instance families
+## When to chose which instance type
 
 #### General purpose
 Provide a balance of
