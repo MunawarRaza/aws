@@ -6,6 +6,7 @@
 5. [What is the Naming Convention of Instance Type](#What-is-the-Naming-Convention-of-Instance-Type)
 6. [When to chose which instance type](#When-to-chose-which-instance-type)
 7. [How to Create EC2](#How-to-Create-EC2)
+8. [What are the Storage options](#what-are-the-storage-options)
 
 ## What is EC2
 
@@ -148,3 +149,27 @@ These instances are ideal for applications that use these resources in equal pro
 - Storage
     - GP2/GP3/io1/io3/standard
 - Advance details
+
+## What are the storages options
+
+Amazon EC2 provides you with flexible, cost effective, and easy-to-use data storage options for your instances. Each option has a unique combination of performance and durability.
+
+### Elastic Block Storage (EBS)
+Amazon EBS provides durable, block-level storage volumes that
+- you can attach and detach from your instances.
+- You can attach multiple EBS volumes to an instance
+- You can encrypt your EBS volumes
+- To keep a backup copy of your data, you can create snapshots from your EBS volumes
+- Snapshots are stored in Amazon S3.
+- You can create an EBS volume from a snapshot
+
+### Instance Store
+
+### AWS Elastic File System ( EFS )
+- Amazon EFS provides scalable file storage for use with Amazon EC2
+- You can create an EFS file system and configure your instances to mount the file system.
+- You can attach EFS with multiple instances at a time for common data storage
+
+### Amazon Simple Storage Service (Amazon S3)
+- You can use S3 to store and retrive any ammount of data at any time from anywhere over the internet.
+- You can use S3 store the backups, logs, files etc.
