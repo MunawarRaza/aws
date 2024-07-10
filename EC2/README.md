@@ -6,7 +6,7 @@
 5. [What is the Naming Convention of Instance Type](#What-is-the-Naming-Convention-of-Instance-Type)
 6. [When to chose which instance type](#When-to-chose-which-instance-type)
 7. [How to Create EC2](#How-to-Create-EC2)
-8. [What are the Storage options](#what-are-the-storage-options)
+8. [What are the Storage options](#What-are-the-Storage-options)
 
 ## What is EC2
 
