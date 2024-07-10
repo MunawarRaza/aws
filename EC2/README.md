@@ -150,7 +150,7 @@ These instances are ideal for applications that use these resources in equal pro
     - GP2/GP3/io1/io3/standard
 - Advance details
 
-## What are the storages options
+## What are the Storage options
 
 Amazon EC2 provides you with flexible, cost effective, and easy-to-use data storage options for your instances. Each option has a unique combination of performance and durability.
 
