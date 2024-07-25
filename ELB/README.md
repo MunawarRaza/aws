@@ -34,8 +34,9 @@ Elastic Load Balancing automatically distributes your incoming traffic across mu
     You can use AWS WAF with your Application Load Balancer to allow or block requests based on the rules in a web access control list (web ACL)
 
 ## How ELB works
+When we create a loadbalancer, it creates a load balancer node in each AZ.When a load balancer receives a request, it sends it to the load balancer node and that load balancer node route that request to the registered targets.
 
-A load balancer accepts incoming traffic from clients and routes requests to its registered targets (such as EC2 instances) in one or more Availability Zones. The load balancer also monitors the health of its registered targets and ensures that it routes traffic only to healthy targets. When the load balancer detects an unhealthy target, it stops routing traffic to that target. It then resumes routing traffic to that target when it detects that the target is healthy again.
+A load balancer accepts incoming traffic from clients,  and routes requests to its registered targets (such as EC2 instances) in one or more Availability Zones. The load balancer also monitors the health of its registered targets and ensures that it routes traffic only to healthy targets. When the load balancer detects an unhealthy target, it stops routing traffic to that target. It then resumes routing traffic to that target when it detects that the target is healthy again.
 
 You configure your load balancer to accept incoming traffic by specifying one or more listeners. A listener is a process that checks for connection requests. It is configured with a protocol and port number for connections from clients to the load balancer. Likewise, it is configured with a protocol and port number for connections from the load balancer to the targets.
 
